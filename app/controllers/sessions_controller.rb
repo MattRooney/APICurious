@@ -5,4 +5,9 @@ class SessionsController < ApplicationController
     end
     redirect_to current_user
   end
+
+  def destroy
+    session.clear
+    redirect_to "/"
+  end
 end
