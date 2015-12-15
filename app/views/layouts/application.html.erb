@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>WarPigeon</title>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="stylesheets/application.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <nav>
-    <div class="nav-wrapper red">
-      <a href="/" class="brand-logo center"><%= image_tag 'logo.png', class: "nav-logo" %></a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="/" class="black-text">Home</a></li>
-      </ul>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#" class="black-text">Your Profile</a></li>
-        <li><a href="#" class="black-text">Tweet!</a></li>
-        <% if current_user %>
-          <li><%= link_to "Logout", logout_path, class: "black-text" %></li>
-        <% end %>
-      </ul>
-    </div>
-  </nav>
-<%= yield %>
-</body>
+  <head>
+    <title>WarPigeon</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/application.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper red">
+        <a href="/" class="brand-logo center"><%= image_tag 'logo.png', class: "nav-logo" %></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="/" class="black-text">Home</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#" class="black-text">Your Profile</a></li>
+          <li><a href="#" class="black-text">Tweet!</a></li>
+          <% if current_user %>
+            <li><%= link_to "Logout", logout_path, class: "black-text" %></li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+  <%= yield %>
+  </body>
 </html>
