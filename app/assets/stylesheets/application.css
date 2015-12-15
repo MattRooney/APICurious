@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background: url(single.jpeg);
+  position: relative;
+}
+
+.nav-logo {
+  height: 68px;
+}
