@@ -1,29 +1,4 @@
 <div class="container">
-  <div class="card col s4 left card-radius">
-    <p> <%= image_tag @user.profile_image_url, class: "card-radius" %> </p>
-    <h5><%= @user.name %> </h5>
-    <p> @<%= @user.handle %> </p>
-    <p>Tweets Following Followers</p>
-    <p><%= @user.tweets_count %> <%= @user.friends_count %> <%= @user.followers_count %></p>
-  </div>
-<div class="row">
-  <div class="col s8">
-    <% @client.home_timeline.each do |tweet| %>
-      <div class="card card-radius">
-          <div class="col s1">
-            <%= image_tag tweet.user.profile_image_url %>
-          </div>
-          <div class="row">
-            <div class="center">
-              <%= tweet.user.name %> @<%= tweet.user.handle %>
-            </div>
-          </div>
-          <div class="center">
-            <%= tweet.text %>
-          </div>
-          <br>
-        </div>
-    <% end %>
-    </div>
-  </div>
+  <%= render "partials/profile_card" %>
+  <%= render "partials/tweet_cards" %>
 </div>
