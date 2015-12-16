@@ -3,7 +3,7 @@
     <div class="nav-wrapper red">
       <a href="/" class="brand-logo center"><%= image_tag 'logo.png', class: "nav-logo" %></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="/" class="black-text">Home</a></li>
+        <li><%= link_to "Home", current_user, class: "black-text" %></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#" class="black-text">Your Profile</a></li>
