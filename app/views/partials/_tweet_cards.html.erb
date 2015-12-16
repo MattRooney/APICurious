@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col s8">
-    <% @client.home_timeline.each do |tweet| %>
+    <% @current_client.home_timeline.each do |tweet| %>
       <div class="card card-radius">
           <div class="col s1">
             <%= image_tag tweet.user.profile_image_url %>

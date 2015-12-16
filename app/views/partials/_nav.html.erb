@@ -7,7 +7,7 @@
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#" class="black-text">Your Profile</a></li>
-        <li><a href="#" class="black-text">Tweet!</a></li>
+        <li><%= link_to "Tweet!", new_tweet_path, class: "black-text" %></li>
         <% if current_user %>
           <li><%= link_to "Logout", logout_path, class: "black-text" %></li>
         <% end %>

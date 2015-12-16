@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="card card-radius center">
+    <%= form_tag tweets_path, method: :post do %>
+      <%= label_tag "Compose a Tweet" %>
+      <%= text_area_tag "tweet[text]" %>
+      <%= submit_tag "Tweet", class: "btn red black-text" %>
+    <% end %>
+  </div>
+</div>
