@@ -17,7 +17,9 @@
   background: url(single.jpeg);
   position: relative;
 }
-
 .nav-logo {
   height: 68px;
+}
+.card-radius {
+  border-radius: 7px;
 }

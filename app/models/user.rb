@@ -8,4 +8,13 @@ class User < ActiveRecord::Base
       new_user.oauth_token_secret = auth_info.credentials.secret
     end
   end
+
+  # def self.service
+  #   TwitterService.new(current_user)
+  # end
+  #
+  # def self.followers
+  #   service.followers
+  # end
+
 end
