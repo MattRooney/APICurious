@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   def show
-    @client ||= TwitterService.new(current_user).client
-    @user = @client.user
+    @user = current_client.user
   end
 end
