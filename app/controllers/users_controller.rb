@@ -3,5 +3,5 @@ class UsersController < ApplicationController
     @client ||= TwitterService.new(current_user).client
     @user = @client.user
     binding.pry
-  end
+   end
 end
