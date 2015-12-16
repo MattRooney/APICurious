@@ -6,9 +6,9 @@
     <p>Tweets Following Followers</p>
     <p><%= @user.tweets_count %> <%= @user.friends_count %> <%= @user.followers_count %></p>
   </div>
-  <%# @client.home_timeline.each do |tweet| %>
-    <!-- <div class="card card-radius col s8"> -->
-    <%=# tweet.text %>
-    <!-- </div> -->
-  <%# end %>
+  <% @client.home_timeline.each do |tweet| %>
+    <div class="card card-radius col s8">
+    <%= tweet.text %>
+    </div>
+  <% end %>
 </div>
