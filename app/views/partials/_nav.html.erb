@@ -1,0 +1,17 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper red">
+      <a href="/" class="brand-logo center"><%= image_tag 'logo.png', class: "nav-logo" %></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/" class="black-text">Home</a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#" class="black-text">Your Profile</a></li>
+        <li><a href="#" class="black-text">Tweet!</a></li>
+        <% if current_user %>
+          <li><%= link_to "Logout", logout_path, class: "black-text" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</div>
