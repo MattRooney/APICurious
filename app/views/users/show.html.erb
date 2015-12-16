@@ -10,7 +10,15 @@
   <div class="col s8">
     <% @client.home_timeline.each do |tweet| %>
       <div class="card card-radius">
-      <%= tweet.text %>
+        <div class="row">
+          <div class="col s1">
+            <%= image_tag tweet.user.profile_image_url %>
+          </div>
+          <div class="col s7">
+            <strong><%= tweet.user.name %></strong> @<%= tweet.user.handle %>
+          </div>
+          <br>
+          <%= tweet.text %>
       </div>
     <% end %>
     </div>
