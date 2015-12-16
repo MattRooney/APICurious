@@ -2,6 +2,21 @@
   <p> <%= image_tag @user.profile_image_url, class: "card-radius" %> </p>
   <h5><%= @user.name %> </h5>
   <p> @<%= @user.handle %> </p>
-  <p>Tweets Following Followers</p>
-  <p><%= @user.tweets_count %> <%= @user.friends_count %> <%= @user.followers_count %></p>
+
+  <table class="centered">
+    <thead>
+      <tr>
+        <th><%= link_to "Tweets", tweets_path %></th>
+        <th>Following</th>
+        <th>Followers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @user.tweets_count %></td>
+        <td><%= @user.friends_count %></td>
+        <td><%= @user.followers_count %></td>
+      </tr>
+    </tbody>
+</table>
 </div>
