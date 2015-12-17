@@ -3,7 +3,7 @@
     <li class="collection-item avatar card-radius">
       <%= image_tag tweet.user.profile_image_url, class: "card-radius" %>
       <span class="title"><%= tweet.user.name %></span>
-      <p>@<%= tweet.user.handle %><br>
+      <p>@<%= tweet.user.screen_name %><br>
       <%= tweet.text %></p>
       <%= link_to favorites_path(tweet_id: tweet.id), method: :post, class: "secondary-content" do %>
         <i class="material-icons">grade</i>

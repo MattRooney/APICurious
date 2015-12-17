@@ -12,6 +12,10 @@
 !/log/.keep
 /tmp
 /notes.txt
+/coverage
+/test/cassettes
+.byebughistory
+/test/fixtures
 
 # Ignore application configuration
 /config/application.yml
