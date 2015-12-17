@@ -20,9 +20,16 @@ class TwitterServiceTest < ActiveSupport::TestCase
   test "#user" do
     VCR.use_cassette("twitter_service#user") do
 
+      assert service.user
       assert_equal "Roondoggle", service.user.screen_name
     end
   end
 
-  
+  test "#user[:screen_name]" do
+    VCR.use_cassette("twitter_service#user") do
+
+      assert_equal "Roondoggle", service.user["screen_name"]
+    end
+  end
+
 end

@@ -12,9 +12,9 @@ http_interactions:
       User-Agent:
       - TwitterRubyGem/5.15.0
       Authorization:
-      - OAuth oauth_consumer_key="UUU6ChiaPTQbOIAmQMM9zfa2M", oauth_nonce="7b0c3754e2cbed38d05ddc1147799d8a",
-        oauth_signature="bAu%2FMU8QQl5JtA3UM%2Foiy2NrmGM%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1450312989", oauth_token="854970571-9kO0lt28zx8IgXIsge4sYatbcPLvaMOw3mnSGEnJ",
+      - OAuth oauth_consumer_key="UUU6ChiaPTQbOIAmQMM9zfa2M", oauth_nonce="a708fb5ea6ea02d7cfbef30fa754ec08",
+        oauth_signature="1NSqkPLYdImn83FzVIIPg4PzBuE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1450314291", oauth_token="854970571-9kO0lt28zx8IgXIsge4sYatbcPLvaMOw3mnSGEnJ",
         oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -32,18 +32,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Thu, 17 Dec 2015 00:43:09 GMT
+      - Thu, 17 Dec 2015 01:04:51 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Thu, 17 Dec 2015 00:43:09 GMT
+      - Thu, 17 Dec 2015 01:04:51 GMT
       Pragma:
       - no-cache
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A145031298976240371; Domain=.twitter.com; Path=/; Expires=Sat,
-        16-Dec-2017 00:43:09 UTC
+      - guest_id=v1%3A145031429153676086; Domain=.twitter.com; Path=/; Expires=Sat,
+        16-Dec-2017 01:04:51 UTC
       - lang=en; Path=/
       Status:
       - 200 OK
@@ -52,7 +52,7 @@ http_interactions:
       X-Access-Level:
       - read-write
       X-Connection-Hash:
-      - 22351a01a16b451ff4bddf22cc6bd95b
+      - 788c0904ecfacd33f09042076a4923ba
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -62,11 +62,11 @@ http_interactions:
       X-Rate-Limit-Remaining:
       - '14'
       X-Rate-Limit-Reset:
-      - '1450313889'
+      - '1450315191'
       X-Response-Time:
-      - '34'
+      - '36'
       X-Transaction:
-      - ee97371c69c12f0f
+      - 438b1f5e39408274
       X-Twitter-Response-Tags:
       - BouncerCompliant
       - BouncerExempt
@@ -81,5 +81,87 @@ http_interactions:
         my app","source":"\u003ca href=\"http:\/\/127.0.0.1:3000\" rel=\"nofollow\"\u003eRooney''s
         Carrier Pigeon\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":1,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2666334819\/04babd487d1f2ea83d11fbea08c7fcc7_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2666334819\/04babd487d1f2ea83d11fbea08c7fcc7_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/854970571\/1432139315","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
     http_version: 
-  recorded_at: Thu, 17 Dec 2015 00:43:09 GMT
+  recorded_at: Thu, 17 Dec 2015 01:04:51 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="UUU6ChiaPTQbOIAmQMM9zfa2M", oauth_nonce="b43818060d7be4f4cfa9247e3788f3a5",
+        oauth_signature="jSyioe5%2B6AqnKT2vGV5qm%2Bgs0uA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1450314291", oauth_token="854970571-9kO0lt28zx8IgXIsge4sYatbcPLvaMOw3mnSGEnJ",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '855'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 17 Dec 2015 01:04:51 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 17 Dec 2015 01:04:51 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145031429179699160; Domain=.twitter.com; Path=/; Expires=Sat,
+        16-Dec-2017 01:04:51 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 483bde34d93e4866eebbacd8c9c1f0cc
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '13'
+      X-Rate-Limit-Reset:
+      - '1450315191'
+      X-Response-Time:
+      - '33'
+      X-Transaction:
+      - 9e0271ee5339c85f
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      - BouncerExempt
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":854970571,"id_str":"854970571","name":"Matt Rooney","screen_name":"Roondoggle","location":"","description":"Music,
+        Hockey, Beer, Food, Laughs please","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":93,"friends_count":330,"listed_count":2,"created_at":"Sun
+        Sep 30 16:24:02 +0000 2012","favourites_count":21,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":129,"lang":"en","status":{"created_at":"Wed
+        Dec 16 01:56:56 +0000 2015","id":676944062902108161,"id_str":"676944062902108161","text":"testing
+        my app","source":"\u003ca href=\"http:\/\/127.0.0.1:3000\" rel=\"nofollow\"\u003eRooney''s
+        Carrier Pigeon\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":1,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2666334819\/04babd487d1f2ea83d11fbea08c7fcc7_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2666334819\/04babd487d1f2ea83d11fbea08c7fcc7_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/854970571\/1432139315","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 01:04:51 GMT
 recorded_with: VCR 3.0.0
