@@ -27,4 +27,6 @@ class UserTest < ActiveSupport::TestCase
 
     assert_equal "Roondoggle", user.screen_name
   end
+
+  
 end

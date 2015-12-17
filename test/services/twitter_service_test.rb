@@ -55,11 +55,13 @@ class TwitterServiceTest < ActiveSupport::TestCase
   end
 
   test "#user posts tweet" do
+    skip
     VCR.use_cassette("twitter_service#user") do
     end
   end
 
   test "#user adds favorite" do
+    skip
     VCR.use_cassette("twitter_service#user") do
     end
   end

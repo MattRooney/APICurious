@@ -10,7 +10,4 @@ class TwitterService
     end
   end
 
-  # def user_timeline
-  #   client.user_timeline
-  # end
 end
