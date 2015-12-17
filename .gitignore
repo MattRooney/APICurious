@@ -12,6 +12,7 @@
 !/log/.keep
 /tmp
 /notes.txt
+/coverage
 
 # Ignore application configuration
 /config/application.yml
