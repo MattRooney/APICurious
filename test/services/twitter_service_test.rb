@@ -39,28 +39,37 @@ class TwitterServiceTest < ActiveSupport::TestCase
 
   test "#followers_count" do
     VCR.use_cassette("twitter_service#user") do
+
       assert_equal 93, service.user.followers_count
     end
   end
 
   test "#friends_count" do
     VCR.use_cassette("twitter_service#user") do
+
       assert_equal 330, service.user.friends_count
     end
   end
   test "#tweets_count" do
     VCR.use_cassette("twitter_service#user") do
+
       assert_equal 129, service.user.tweets_count
     end
   end
 
   test "#user posts tweet" do
-    VCR.use_cassette("twitter_service#user") do
+    service.stubs(:update).returns(Twitter::Tweet.new(id: 123))
+    VCR.use_cassette("twitter_service#update") do
+
+      assert_equal Twitter::Tweet, service.update("Tweet Test").class
     end
   end
 
   test "#user adds favorite" do
-    VCR.use_cassette("twitter_service#user") do
+    service.stubs(:favorite).returns(Twitter::Tweet.new(id: 123))
+    VCR.use_cassette("twitter_service#favorite") do
+
+      assert_equal Twitter::Tweet, service.favorite("Test Tweet").class
     end
   end
 

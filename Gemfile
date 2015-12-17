@@ -13,6 +13,7 @@ gem 'omniauth-twitter'
 gem 'twitter'
 gem 'figaro'
 gem 'launchy'
+gem 'mocha'
 
 group :development, :test do
   gem 'byebug'
