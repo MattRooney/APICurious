@@ -67,19 +67,6 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
            "notifications"=>false}}})
   end
 
-  test "logging in" do
-    visit "/"
-
-    assert_equal 200, page.status_code
-
-    click_link "Login with Twitter"
-
-    assert_equal "/users/2", current_path
-    assert page.has_content?("matt rooney")
-    assert page.has_content?("matthewjrooney2")
-    assert page.has_link?("Logout")
-  end
-
   test "log in and log out" do
     visit "/"
 
