@@ -2,7 +2,7 @@
 
 This repo contains my implementation of the Turing School API Curious project.
 
-You can find the original assignment [here.] (https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/apicurious.md)
+You can find the original assignment here: https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/apicurious.md
 
 I used Twitter Oauth and the Twitter API to build a basic version of Twitter. You can login, view your feed, post a tweet and favorite a tweet. 
 
