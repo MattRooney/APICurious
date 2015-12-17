@@ -1,12 +1,12 @@
 <body class="home">
-  <div class="center white-text">
+  <div class="center black-text">
     <% if current_user %>
       <p>Hi, <%= current_user.name %></p>
-      <%= link_to "Logout", logout_path, class: "btn red" %>
+      <%= link_to "Logout", logout_path, class: "btn red black-text" %>
     <% else %>
       <h1>Carrier Pigeon</h1>
       <p>Stay in touch with , 139 characters at a time.</p>
-      <%= link_to "Login with Twitter", login_path, class: "btn red white-text" %>
+      <%= link_to "Login with Twitter", login_path, class: "btn red black-text" %>
     <% end %>
   </div>
 </body>
