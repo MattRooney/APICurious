@@ -3,11 +3,11 @@ class TweetsController < ApplicationController
   end
 
   def create
-    current_client.update(params[:tweet][:text])
+    twitter_service.update(params[:tweet][:text])
     redirect_to current_user
   end
 
   def index
-    @tweets = current_client.user_timeline
+    @tweets = twitter_service.user_timeline
   end
 end

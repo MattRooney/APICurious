@@ -1,5 +1,5 @@
 <ul class="collection">
-  <% @current_client.home_timeline.each do |tweet| %>
+  <% @twitter_service.home_timeline.each do |tweet| %>
     <li class="collection-item avatar card-radius">
       <%= image_tag tweet.user.profile_image_url, class: "card-radius" %>
       <span class="title"><%= tweet.user.name %></span>

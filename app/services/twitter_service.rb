@@ -9,4 +9,28 @@ class TwitterService
       config.access_token_secret = user.oauth_token_secret
     end
   end
+
+  def full_name
+    client.user.name
+  end
+
+  def profile_img
+    client.user.profile_image_url
+  end
+
+  def screen_name
+    client.user.screen_name
+  end
+
+  def tweet_count
+    client.user.tweets_count
+  end
+
+  def friend_count
+    client.user.friends_count
+  end
+
+  def follower_count
+    client.user.followers_count
+  end
 end
