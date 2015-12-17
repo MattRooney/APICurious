@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo contains my implementation of the Turing School API Curious project.
 
-Things you may want to cover:
+You can find the original assignment [here.] (https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/apicurious.md)
 
-* Ruby version
+I used Twitter Oauth and the Twitter API to build a basic version of Twitter. You can login, view your feed, post a tweet and favorite a tweet. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You can find the production version of my app here: http://rooney-carrier-pigeon.herokuapp.com/
