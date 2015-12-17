@@ -33,4 +33,28 @@ class TwitterService
   def follower_count
     client.user.followers_count
   end
+
+  def feed
+    client.home_timeline
+  end
+
+  def my_tweets
+    client.user_timeline
+  end
+
+  def tweet(params)
+    client.update(params)
+  end
+
+  def add_favorite(params)
+    client.favorite(params)
+  end
+
+  def unfavorite(params)
+    client.unfavorite(params)
+  end
+  
+  def all_favorites
+    client.favorites
+  end
 end

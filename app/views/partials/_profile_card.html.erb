@@ -1,7 +1,7 @@
 <div class="card col s4 left card-radius">
-  <p> <%= image_tag @twitter_service.profile_img, class: "card-radius" %> </p>
-  <h5><%= @twitter_service.full_name %> </h5>
-  <p> @<%= @twitter_service.screen_name %> </p>
+  <p> <%= image_tag twitter_service.profile_img, class: "card-radius" %> </p>
+  <h5><%= twitter_service.full_name %> </h5>
+  <p> @<%= twitter_service.screen_name %> </p>
 
   <table class="centered">
     <thead>
@@ -13,9 +13,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><%= @twitter_service.tweets_count %></td>
-        <td><%= @twitter_service.friends_count %></td>
-        <td><%= @twitter_service.followers_count %></td>
+        <td><%= twitter_service.tweet_count %></td>
+        <td><%= twitter_service.friend_count %></td>
+        <td><%= twitter_service.follower_count %></td>
       </tr>
     </tbody>
 </table>
