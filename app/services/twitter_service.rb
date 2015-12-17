@@ -9,5 +9,4 @@ class TwitterService
       config.access_token_secret = user.oauth_token_secret
     end
   end
-
 end
